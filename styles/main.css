@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-family:'sans-serif','Arial','Lucida Sans Unicode','Times New Roman';
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------
+home page
+------------------------------------------------------------------------------------------------------------------
+ */
+
+.homepagetop-container{
+    height: 75vh; 
+}
+
+.homepagetop-container img {
+    width: 100%;
+    height: 100%;
+} 
+
+.aboutme-container,
+.spsustainability-container,
+.promotingsustainability-container {
+    block-size: 400px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+
+} 
+
+.aboutme-container img,
+.spsustainability-container img{
+    grid-column: 1; /* Places image in the first column */
+    grid-row: 1 / span 3; /* Image spans over three rows */
+    width: 100%; 
+    max-width: 350px; 
+    align-self: center;
+}
+
+.aboutme-container h1,
+.spsustainability-container h1,
+.aboutme-container p,
+.spsustainability-container p,
+.aboutme-container a,
+.spsustainability-container a {
+    grid-column: 2; /* Places the text in the second column */
+    grid-row: span 1;
+}
+
+
+.promotingsustainability-container img {
+  grid-column: 2; /* Place image in the second column */
+  grid-row: 1 / span 3; /* Image spans three rows */
+  width: 100%; 
+  max-width: 350px;
+  align-self: center;
+}
+
+.promotingsustainability-container h1,
+.promotingsustainability-container p,
+.promotingsustainability-container a {
+  grid-column: 1; /* Position in the second column */
+  grid-row: span 1;
+}
+
+@media (max-width: 768px) {
+    .aboutme-container,
+    .spsustainability-container,
+    .promotingsustainability-container {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens*/
+    }
+  
+    .aboutme-container img,
+    .spsustainability-container img,
+    .promotingsustainability-container img {
+      grid-row: auto; /* Reset the image grid row*/
+    }
+  
+    .aboutme-container h1,
+    .spsustainability-container h1,
+    .promotingsustainability-container h1,
+    .aboutme-container p,
+    .spsustainability-container p,
+    .promotingsustainability-container p,
+    .aboutme-container a,
+    .spsustainability-container a,
+    .promotingsustainability-container a {
+      grid-column: 1; /* Place text in the first column*/ 
+    }
+} 
+
+/* Card styles */
+.card {
+  flex: 0 0 calc(30% - 25px);
+  margin: 3px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+index html
+-----------------------------------------------------------------------------------------------------------------------
+*/
+
+.background {
+    background-image: url(../assets/photos/index01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+  
+#typeWriting {
+    display: inline-block;
+} 
+
+/* 
+------------------------------------------------------------------------------------------------------------------
+about me html
+------------------------------------------------------------------------------------------------------------------
+ */
+
+svg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Ensure the wave stays in the background */
+  }
+
+.about-me-content ,.interest-content ,.personality-content{
+    max-width: 480px;
+    margin-left: 100px; /* Add some space between the image and text */
+    font-size: 18px;
+    margin-top: 50px;
+} 
+  
+.circle-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+/*
+-----------------------------------------------------------------------------------------------
+footer styles
+-------------------------------------------------------------------------------------------------
+*/
+
+.footer{
+    background-image:url("../assets/photos/footerimg01.jpg"); 
+}
+
+/* 
+---------------------------------------------------------------------------------------------------------------
+opinion html
+----------------------------------------------------------------------------------------------------------------
+*/  
+.opt { /*quiz multiple choice option*/
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #b7b2b2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+      
+.opt:hover {
+    background-color: #787474;
+}
+/*
+----------------------------------------------------------------------------------------------------------------------
+sp html
+----------------------------------------------------------------------------------------------------------------------
+*/
+.card-body{
+    background-image: linear-gradient(to bottom right, #F6F7DD,#DECFAC);
+   
+} 
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+   transform: scale(1.05); /* (150% zoom if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* 
+--------------------------------------------------------------------------------------------------------
+feedback html
+--------------------------------------------------------------------------------------------------------
+*/
+  
+.container-feedbackpage input:focus,
+.container-feedbackpage textarea:focus,
+.container-feedbackpage select:focus {
+    outline: 1px solid black;
+    border-color: black;
+    background: #F6F7DD;
+}
+  
+.container-feedbackpage input[type="text"],
+.container-feedbackpage textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+.container-feedbackpage input[type="submit"],
+.container-feedbackpage input[type="reset"] {
+    padding: 8px 15px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 1px solid;
+}
+
+  
+.container-feedbackpage input[type="submit"]:hover,
+.container-feedbackpage input[type="reset"]:hover {
+    background-color: rgb(179, 179, 179);
+}
+  
+  /* Validation styles for feedback form */
+input#name:focus:valid,
+input#Neighborhood:focus:valid,
+input#email:focus:valid {
+    background: #F6F7DD url() bottom right/contain no-repeat;
+}
+  
+input#name:focus:invalid,
+input#Neighborhood:focus:invalid,
+input#email:focus:invalid {
+    background: #F6F7DD url() bottom right/contain no-repeat;
+}
+  
+

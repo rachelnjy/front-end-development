@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="save,environment,earth,sustainability,sustasinable" />
+    <title>Save The Earth</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="../script/alert.js"></script>
+
+</head>
+
+
+<body>
+    <!-- use svg to print out the wave background -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#E5F6DF" fill-opacity="0.8"
+            d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,128C672,107,768,117,864,122.7C960,128,1056,128,1152,144C1248,160,1344,192,1392,208L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+
+    <div class="feedbackpage">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background: rgb(61, 61, 61);">
+                <div class="container-fluid navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-brand logo" href="../html/home.html">
+                            <img src="../assets/photos/logo.png" alt="Save the Earth Logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../html/home.html">Home</a>
+                            <a class="nav-link" href="../html/aboutme.html">About Me</a>
+                            <a class="nav-link" href="../html/opinion.html">Opinion In Saving The Earth</a>
+                            <a class="nav-link" href="../html/sp.html">Enviromental Sustainability In SP</a>
+                            <a class="nav-link" href="../html/feedback.html">Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="container-feedbackpage" style="padding: 20px;">
+            <h1 class="text-center" style="margin-top: 10px;">Feedback</h1>
+            <h2 class="text-center fs-4 mt-2">Your feedback is valuable to us.</h2>
+            <p class="text-center">Required components are marked by an asterisk (*)</p>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="name">Name*</label>
+                            <input name="custName" id="name" type="text" placeholder="First and last name" required
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="email">E-mail*</label>
+                            <input name="custEmail" id="email" type="email" placeholder="example@example.com" required
+                                class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="gender">Gender:</label><br>
+                    <input class="form-check-input" type="radio" name="gender" id="gMale" value="Male" checked>
+                    <label class="form-check-label" for="gMale">Male</label>
+                    <input class="form-check-input" type="radio" name="gender" id="gFemale" value="Female">
+                    <label class="form-check-label" for="gFemale">Female</label>
+                    <input class="form-check-input" type="radio" name="gender" id="gOthers" value="Others">
+                    <label class="form-check-label" for="gOthers">Others</label>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Neighborhood">Residential neighborhood:</label>
+                    <select name="RNeighborhood" id="Neighborhood" class="form-control">
+                        <option selected>Select One</option>
+                        <option value="Ang Mo Kio">Ang Mo Kio</option>
+                        <option value="Bedok">Bedok</option>
+                        <option value="Bishan">Bishan</option>
+                        <option value="Bukit Merah">Bukit Merah</option>
+                        <option value="Bukit Panjang">Bukit Panjang</option>
+                        <option value="Bukit Timah">Bukit Timah</option>
+                        <option value="Central Area">Central Area</option>
+                        <option value="Choa Chu Kang">Choa Chu Kang</option>
+                        <option value="Clementi">Clementi</option>
+                        <option value="Geylang">Geylang</option>
+                        <option value="Hougang">Hougang</option>
+                        <option value="Jurong">Jurong</option>
+                        <option value="Kallang/Whampoa">Kallang/Whampoa</option>
+                        <option value="Marine Parade">Marine Parade</option>
+                        <option value="Pasir Ris">Pasir Ris</option>
+                        <option value="Punggol">Punggol</option>
+                        <option value="Queenstown">Queenstown</option>
+                        <option value="Sembawang">Sembawang</option>
+                        <option value="Sengkang">Sengkang</option>
+                        <option value="Serangoon">Serangoon</option>
+                        <option value="Tampines">Tampines</option>
+                        <option value="Toa Payoh">Toa Payoh</option>
+                        <option value="Woodlands">Woodlands</option>
+                        <option value="Yishun">Yishun</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="rateBox">Rate the overall webpage:</label><br>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio1" >1</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1" checked>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio3">3</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option3">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio4">4</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option4">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineRadio5">5</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option5">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="custReason">Please share with us the reason(s) for your score.*</label>
+                    <textarea name="custReason" id="custReason" placeholder="Leave your reason(s) here."
+                        class="form-control"></textarea>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="hearAbout">How did you hear about us? </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="socialmedia">
+                        <label class="form-check-label" for="instagram">Social Media</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="peer">
+                        <label class="form-check-label" for="instagram">Peer Referral</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="google">
+                        <label class="form-check-label" for="instagram">Google</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ad">
+                        <label class="form-check-label" for="instagram">Ad</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="others">
+                        <label class="form-check-label" for="instagram">Others</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label for="recomendUs">Would you recommend us to others? </label><br>
+                    <label class="form-check-label" for="rYes" >Yes</label>
+                    <input class="form-check-input" type="radio" name="recommend" id="rYes" value="Yes" checked>
+                    <label class="form-check-label" for="rNo">No</label>
+                    <input class="form-check-input" type="radio" name="recommend" id="rNo" value="No">
+                </div>
+
+                <div class="button-group mt-3 d-flex justify-content-center">
+                    <input type="submit" class="btn" style="margin-right: 10px;" value="Submit" onclick="showMessage()">
+                    <input type="reset" class="btn" value="Cancel">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <footer class="footer" style="height: 200px; width: 100%;">
+        <div class="connect text-center mt-3">
+            <ul>
+                <h2>Let's Connect !</h2>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../assets/photos/youtube.png" height=50px
+                        width=50px alt="Youtube"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://facebook.com/" target="_blank"><img src="../assets/photos/facebook.png" height=50px
+                        width=50px alt="Facebook"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://instagram.com/" target="_blank"><img src="../assets/photos/instagram.png" height=50px
+                        width=50px alt="Instgram"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://twitter.com/" target="_blank"><img src="../assets/photos/twitter.png" height=50px
+                        width=50px alt="Twitter"></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Target blank is to open a new tab-->
+            </ul>
+        </div>
+    </footer>
+
+</body>
